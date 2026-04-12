@@ -7,11 +7,6 @@ body {
 /* DARK MODE THEME        */
 /* ---------------------- */
 
-body.dark {
-    background: #1e1e1e;
-    color: #e5e5e5;
-}
-
 body.dark .navbar {
     background: #2a2a2a;
     border-bottom: 1px solid #444;
@@ -120,4 +115,8 @@ body.dark #themeToggle {
     margin-bottom: 15px;
     border-radius: 6px;
     border: 1px solid #ddd;
+}
+body.dark {
+    background: #1e1e1e;
+    color: #e5e5e5;
 }
