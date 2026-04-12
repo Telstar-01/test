@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Works – Author Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="hero small">
+    <h1>Complete Works</h1>
+    <p class="tagline">Browse manuscripts, translations, letters, and more</p>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="bibliography.html">Bibliography</a>
+    <a href="https://archive.org/details/@your_archive">Internet Archive</a>
+</nav>
+
+<section class="content">
+
+    <input id="searchBox" type="text" placeholder="Search works…" onkeyup="searchWorks()">
+
+    <h2>Books & Manuscripts</h2>
+    <ul class="work-list">
+        <li class="work-item">
+            <strong>Title of Work (Year)</strong><br>
+            <a href="https://archive.org/details/ITEM_ID">Read on Internet Archive</a> ·
+            <a href="https://doi.org/DOI_HERE">DOI</a>
+        </li>
+
+        <li class="work-item">
+            <strong>Another Work (Year)</strong><br>
+            <a href="https://archive.org/details/ITEM_ID">Read on Internet Archive</a>
+        </li>
+    </ul>
+
+    <h2>Letters</h2>
+    <ul class="work-list">
+        <li class="work-item">
+            <strong>Letter to X (Date)</strong><br>
+            <a href="https://archive.org/details/ITEM_ID">View on Internet Archive</a>
+        </li>
+    </ul>
+
+</section>
+
+<footer>
+    <p>© Public Domain / Estate of Author Name</p>
+</footer>
+
+</body>
+</html>
