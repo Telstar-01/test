@@ -134,3 +134,8 @@ footer {
     .tagline { font-size: 18px; }
     .navbar a { margin: 0 10px; font-size: 15px; }
 }
+.thumbnail {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
