@@ -1,5 +1,5 @@
 /* ===========================
-   1. GLOBAL TYPOGRAPHY & LAYOUT
+   GLOBAL LAYOUT & TYPOGRAPHY
    =========================== */
 
 html, body {
@@ -7,33 +7,45 @@ html, body {
     padding: 0;
     background: #fafafa;
     color: #222;
-}
-
-/* English default font */
-html:lang(en) body {
     font-family: Georgia, serif;
     line-height: 1.7;
 }
 
-/* RTL languages inherit their own font rules */
-[dir="rtl"] {
-    font-family: inherit !important;
-}
+/* ===========================
+   HERO HEADER (BLACK VERSION)
+   =========================== */
 
-h1, h2, h3 {
-    font-family: Georgia, serif;
+.hero {
     text-align: center;
-    margin-top: 0;
+    padding: 60px 20px 40px 20px;
+    background: #000;
+    color: #fff;
 }
 
-.content {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 0 20px;
+.hero.small {
+    padding: 40px 20px 30px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    margin: 10px 0 0 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.tagline {
+    margin-top: 8px;
+    font-size: 20px;
+    opacity: 0.85;
 }
 
 /* ===========================
-   2. NAVIGATION BAR
+   NAVIGATION BAR
    =========================== */
 
 .navbar {
@@ -54,7 +66,43 @@ h1, h2, h3 {
 }
 
 /* ===========================
-   LANGUAGE-SPECIFIC FONTS
+   PAGE CONTENT
+   =========================== */
+
+section {
+    padding: 20px 0 40px 0;
+}
+
+.content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================
+   THUMBNAILS
+   =========================== */
+
+.thumbnail {
+    width: 180px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+/* ===========================
+   LANGUAGE FONTS
    =========================== */
 
 [lang="ur"] {
@@ -73,15 +121,12 @@ h1, h2, h3 {
 }
 
 /* ===========================
-   MOBILE RESPONSIVENESS
+   MOBILE
    =========================== */
 
 @media (max-width: 600px) {
-    .navbar a {
-        margin: 0 10px;
-        font-size: 15px;
-    }
-    .content {
-        padding: 0 15px;
-    }
+    .hero h1 { font-size: 26px; }
+    .hero h2 { font-size: 18px; }
+    .tagline { font-size: 18px; }
+    .navbar a { margin: 0 10px; font-size: 15px; }
 }
