@@ -123,3 +123,49 @@ section.content h2 {
 .featured-button:hover {
     background: #444;
 }
+/* Page title */
+h1 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section headers */
+section h3 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Body text */
+section p {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+}
+
+/* RTL languages */
+section[dir="rtl"] {
+  text-align: right;
+}
+
+/* Page layout */
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Optional: subtle divider between sections */
+section {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}
