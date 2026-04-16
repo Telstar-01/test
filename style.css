@@ -11,6 +11,11 @@ body {
     color: #222;
 }
 
+/* Override global font for RTL languages */
+[dir="rtl"] {
+  font-family: inherit !important;
+}
+
 h1, h2, h3 {
     font-family: "Georgia", serif;
     text-align: center;
