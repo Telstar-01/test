@@ -1,31 +1,56 @@
 /* ===========================
-   1. GLOBAL TYPOGRAPHY & LAYOUT
+   GLOBAL LAYOUT & TYPOGRAPHY
    =========================== */
-body {
-    background: #f7f5ef;
-    font-family: "Georgia", serif;
-    line-height: 1.7;
+
+html, body {
     margin: 0;
     padding: 0;
     background: #fafafa;
     color: #222;
+    font-family: Georgia, serif;
+    line-height: 1.7;
 }
 
-h1, h2, h3 {
-    font-family: "Georgia", serif;
-    text-align: center;
-    margin-top: 0;
-}
-
-.content {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* RTL languages */
+[dir="rtl"] {
+    font-family: inherit !important;
 }
 
 /* ===========================
-   2. NAVIGATION BAR
+   HERO HEADER (Option 1)
    =========================== */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
+.hero.small {
+    padding: 40px 20px 30px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    margin: 10px 0 0 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.tagline {
+    margin-top: 8px;
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+/* ===========================
+   NAVIGATION BAR
+   =========================== */
+
 .navbar {
     background: #222;
     padding: 12px 0;
@@ -44,82 +69,56 @@ h1, h2, h3 {
 }
 
 /* ===========================
-   3. PORTRAIT STYLING
+   PAGE CONTENT
    =========================== */
-.portrait {
-    display: block;
-    max-width: 260px;
-    margin: 25px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+section {
+    padding: 20px 0 40px 0;
+}
+
+.content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* ===========================
-   4. HERO HEADER
+   FOOTER
    =========================== */
-.hero {
-    background: #333;
-    color: white;
-    padding: 60px 20px;
+
+footer {
     text-align: center;
-}
-
-.hero h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.hero h2 {
-    font-size: 22px;
-    font-weight: normal;
-    margin-top: 0;
-}
-
-.tagline {
-    margin-top: 10px;
-    font-style: italic;
-    opacity: 0.9;
+    padding: 25px 0;
+    opacity: 0.8;
+    font-size: 15px;
 }
 
 /* ===========================
-   5. SECTION HEADINGS
+   LANGUAGE FONTS
    =========================== */
-section.content h2 {
-    margin-top: 50px;
-    font-size: 26px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
+
+[lang="ur"] {
+    font-family: 'Noto Nastaliq Urdu', serif !important;
+    line-height: 2.4;
+}
+
+[lang="ar"] {
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif !important;
+    line-height: 2.2;
+}
+
+[lang="fa"] {
+    font-family: 'Vazirmatn', 'Noto Naskh Arabic', serif !important;
+    line-height: 2.2;
 }
 
 /* ===========================
-   6. MOBILE RESPONSIVENESS
+   MOBILE
    =========================== */
+
 @media (max-width: 600px) {
-    .hero h1 { font-size: 24px; }
+    .hero h1 { font-size: 26px; }
     .hero h2 { font-size: 18px; }
+    .tagline { font-size: 18px; }
     .navbar a { margin: 0 10px; font-size: 15px; }
-    .content { padding: 0 15px; }
-}
-.featured {
-    text-align: center;
-    margin: 60px auto;
-    padding: 40px 20px;
-    background: white;
-    border-radius: 10px;
-    max-width: 700px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.featured-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #222;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.featured-button:hover {
-    background: #444;
 }
