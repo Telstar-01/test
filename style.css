@@ -145,3 +145,29 @@ footer {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+/* ===========================
+   URDU / ENGLISH TOGGLE BUTTON
+   =========================== */
+
+.lang-inline {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  vertical-align: middle;
+}
+
+.lang-inline a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 3px;
+}
+
+.lang-inline a:hover {
+  opacity: 1;
+}
+
+.lang-inline .sep {
+  opacity: 0.5;
+}
