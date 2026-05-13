@@ -171,3 +171,13 @@ footer {
 .lang-inline .sep {
   opacity: 0.5;
 }
+.h2-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* space between toggle and h2 */
+  text-align: center;
+}
+
+.h2-row h2 {
+  margin: 0;
+}
