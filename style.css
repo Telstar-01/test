@@ -181,10 +181,3 @@ footer {
 .h2-row h2 {
   margin: 0;
 }
-
-/* ===========================
-   HEADER VERTICAL SPACING FIX
-   =========================== */
-section h2 {
-    margin-top: 0.3em;
-}
