@@ -181,3 +181,7 @@ footer {
 .h2-row h2 {
   margin: 0;
 }
+
+li {
+  margin-bottom: 0.35em;   /* adjust this value to taste */
+}
